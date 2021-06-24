@@ -122,15 +122,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bootvideo.zip:$(TARGET_COPY_OUT_VENDOR)/etc/bootvideo.zip
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/tv.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/bootvideo
+    $(LOCAL_PATH)/libre_computer.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/bootvideo
 
 ifneq ($(TARGET_BUILD_GOOGLE_ATV), true)
 # default wallpaper for mbox to fix bug 106225
+ifeq ($(HWC_PRIMARY_FRAMEBUFFER_HEIGHT),720)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/default_wallpaper.png:$(TARGET_COPY_OUT_VENDOR)/etc/default_wallpaper.png
-
+    $(LOCAL_PATH)/libre_computer_720.png:$(TARGET_COPY_OUT_VENDOR)/etc/libre_computer.png
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libre_computer_1080.png:$(TARGET_COPY_OUT_VENDOR)/etc/libre_computer.png
+endif
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.wallpaper=vendor/etc/default_wallpaper.png
+    ro.config.wallpaper=vendor/etc/libre_computer.png
 endif
 
 # Include BUILD_NUMBER if defined

@@ -425,7 +425,7 @@ on property:ro.debuggable=1
 on property:vendor.sys.mtkbtdriver=true
 	insmod /vendor/lib/modules/btmtksdio.ko
 
-service remotecfg /vendor/bin/remotecfg /vendor/etc/remote.conf
+service remotecfg /vendor/bin/remotecfg -c /vendor/etc/remote.cfg -t /vendor/etc/remote.tab1
     class main
     oneshot
     seclabel u:r:remotecfg:s0
