@@ -15,7 +15,7 @@
 #
 # Generic key layout file for full alphabetic US English PC style external keyboards.
 #
-# This file is intentionally very generic and is intended to support a broad rang of keyboards.
+# This file is intentionally very generic and is intended to support a broad range of keyboards.
 # Do not edit the generic key layout to support a specific keyboard; instead, create
 # a new key layout file with the required keyboard configuration.
 #
@@ -152,11 +152,11 @@ key 128   MEDIA_STOP
 # key 130 "KEY_PROPS"
 # key 131 "KEY_UNDO"
 # key 132 "KEY_FRONT"
-# key 133 "KEY_COPY"
+key 133   COPY
 # key 134 "KEY_OPEN"
-# key 135 "KEY_PASTE"
+key 135   PASTE
 # key 136 "KEY_FIND"
-# key 137 "KEY_CUT"
+key 137   CUT
 # key 138 "KEY_HELP"
 key 139   MENU
 key 140   CALCULATOR
@@ -192,7 +192,7 @@ key 169   CALL
 # key 170 "KEY_ISO"
 key 171   MUSIC
 key 172   HOME
-# key 173 "KEY_REFRESH"
+key 173   REFRESH
 # key 174 "KEY_EXIT"
 # key 175 "KEY_MOVE"
 # key 176 "KEY_EDIT"
@@ -404,14 +404,14 @@ key 484   B                 FUNCTION
 # key 503 KEY_BRL_DOT7
 # key 504 KEY_BRL_DOT8
 
+key 522   STAR
+key 523   POUND
 key 580   APP_SWITCH
 key 582   VOICE_ASSIST
 
 # Keys defined by HID usages
 key usage 0x0c006F BRIGHTNESS_UP
 key usage 0x0c0070 BRIGHTNESS_DOWN
-#for xiaomi bt remote
-key usage 0x07004a HOME
 
 # Joystick and game controller axes.
 # Axes that are not mapped will be assigned generic axis numbers by the input subsystem.

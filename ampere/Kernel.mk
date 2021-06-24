@@ -52,7 +52,7 @@ else
 -include device/amlogic/common/media_modules.mk
 -include device/amlogic/common/wifi_modules.mk
 
-KERNEL_DEVICETREE := gxl_p212_1g
+KERNEL_DEVICETREE := gxl_p212_1g gxl_p212_2g
 KERNEL_DEFCONFIG := meson64_defconfig
 KERNEL_ARCH := arm64
 

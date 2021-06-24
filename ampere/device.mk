@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+GAPPS_VARIANT := full
+
 PRODUCT_COPY_FILES += \
     device/amlogic/common/products/mbox/init.amlogic.system.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.rc \
     device/amlogic/$(PRODUCT_DIR)/init.amlogic.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.usb.rc \
@@ -99,6 +101,8 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # set default USB configuration
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

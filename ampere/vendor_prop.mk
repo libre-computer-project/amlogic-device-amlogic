@@ -66,7 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #add for video boot, 1 means use video boot, others not .
 PRODUCT_PROPERTY_OVERRIDES += \
-    service.bootvideo=0
+    service.bootvideo=1
 
 # Define drm for this device
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -115,7 +115,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #050:default volume value, volume range 0~100
 #note that the high position 0 can not be omitted
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.media.bootvideo=0050
+    persist.vendor.media.bootvideo=3050
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.platform.hdmi.device_type=4
