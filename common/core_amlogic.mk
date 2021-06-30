@@ -264,8 +264,8 @@ PRODUCT_PACKAGES += libomx_av_core_alt \
 
 # Dm-verity
 ifeq ($(BUILD_WITH_DM_VERITY), true)
-PRODUCT_SYSTEM_VERITY_PARTITION = /dev/block/system
-PRODUCT_VENDOR_VERITY_PARTITION = /dev/block/vendor
+PRODUCT_SYSTEM_VERITY_PARTITION = /dev/block/mmcblk1p18
+PRODUCT_VENDOR_VERITY_PARTITION = /dev/block/mmcblk1p16
 # Provides dependencies necessary for verified boot
 PRODUCT_SUPPORTS_BOOT_SIGNER := true
 PRODUCT_SUPPORTS_VERITY := true

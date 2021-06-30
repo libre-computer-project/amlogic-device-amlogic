@@ -131,7 +131,7 @@ endif
 ifeq ($(BOARD_BUILD_DISABLED_VBMETAIMAGE), true)
 ifeq ($(BOARD_BUILD_SYSTEM_ROOT_IMAGE), true)
 ifneq ($(AB_OTA_UPDATER),true)
-BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk0p18"
+BOARD_KERNEL_CMDLINE += --cmdline "root=/dev/mmcblk1p18"
 endif
 endif
 endif
